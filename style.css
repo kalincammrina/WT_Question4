@@ -1,0 +1,487 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #eef2ff;
+
+    color: #1e293b;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    background-color: white;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 6px 25px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    background-color: #312e81;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 25px;
+
+}
+
+
+header h1 {
+
+    font-size: 34px;
+
+    margin: 10px 0;
+
+}
+
+
+header p {
+
+    color: #ddd6fe;
+
+}
+
+
+.subject {
+
+    display: inline-block;
+
+    background-color: #4f46e5;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    color: white;
+
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+
+    padding: 35px;
+
+}
+
+
+/* =========================
+   SUBJECT GRID
+========================= */
+
+.subjects {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+
+}
+
+
+/* =========================
+   SUBJECT BOX
+========================= */
+
+.subject-box {
+
+    background-color: #f8fafc;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    transition: 0.3s;
+
+}
+
+
+.subject-box:hover {
+
+    border-color: #6366f1;
+
+    box-shadow:
+        0 4px 12px rgba(79, 70, 229, 0.1);
+
+}
+
+
+.subject-box label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    color: #334155;
+
+}
+
+
+.subject-box input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+}
+
+
+/* Input focus */
+
+.subject-box input:focus {
+
+    outline: none;
+
+    border-color: #4f46e5;
+
+    box-shadow:
+        0 0 0 3px rgba(79, 70, 229, 0.12);
+
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+
+}
+
+
+button {
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #4f46e5;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+button:hover {
+
+    background-color: #3730a3;
+
+    transform: translateY(-2px);
+
+}
+
+
+.reset {
+
+    background-color: #64748b;
+
+}
+
+
+.reset:hover {
+
+    background-color: #475569;
+
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+#error {
+
+    color: #dc2626;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+
+}
+
+
+/* =========================
+   RESULT
+========================= */
+
+.result {
+
+    margin-top: 35px;
+
+    padding-top: 30px;
+
+    border-top: 2px solid #e2e8f0;
+
+}
+
+
+.result h2 {
+
+    text-align: center;
+
+    color: #312e81;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* Result Grid */
+
+.result-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+}
+
+
+/* Result Box */
+
+.result-box {
+
+    background-color: #eef2ff;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    border: 1px solid #c7d2fe;
+
+}
+
+
+.result-box span {
+
+    display: block;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+}
+
+
+.result-box strong {
+
+    display: block;
+
+    font-size: 28px;
+
+    color: #4338ca;
+
+    margin: 8px 0;
+
+}
+
+
+.result-box small {
+
+    color: #64748b;
+
+}
+
+
+/* Message */
+
+.message {
+
+    background-color: #f8fafc;
+
+    padding: 18px;
+
+    margin-top: 20px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+}
+
+
+#message {
+
+    font-weight: bold;
+
+}
+
+
+/* Hidden class */
+
+.hidden {
+
+    display: none;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background-color: #0f172a;
+
+    color: #cbd5e1;
+
+    text-align: center;
+
+    padding: 25px;
+
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 750px) {
+
+    .subjects {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .result-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .container {
+
+        width: 95%;
+
+        margin: 20px auto;
+
+    }
+
+
+    main {
+
+        padding: 20px;
+
+    }
+
+
+    header h1 {
+
+        font-size: 27px;
+
+    }
+
+
+    .result-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .buttons {
+
+        flex-direction: column;
+
+    }
+
+
+    button {
+
+        width: 100%;
+
+    }
+
+}
